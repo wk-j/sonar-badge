@@ -1,5 +1,6 @@
 ## Sonar Badge
 
+[![Build status](https://ci.appveyor.com/api/projects/status/qfmlxk5yijbd2pc9?svg=true)](https://ci.appveyor.com/project/wk-j/sonar-badge)
 [![](https://sonarcloud.io/api/project_badges/measure?project=sonar-badge&metric=alert_status)](https://sonarcloud.io/dashboard?id=sonar-badge)
 [![](https://sonarcloud.io/api/project_badges/measure?project=sonar-badge&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=sonar-badge)
 [![](https://sonarcloud.io/api/project_badges/measure?project=sonar-badge&metric=security_rating)](https://sonarcloud.io/dashboard?id=sonar-badge)

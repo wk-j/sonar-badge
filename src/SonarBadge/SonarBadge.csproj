@@ -6,5 +6,6 @@
         <PackageId>wk.SonarBadge</PackageId>
         <ToolCommandName>wk-sonar-badge</ToolCommandName>
         <Version>0.1.0</Version>
+        <ProjectGuid>{629e5596-c0a9-48b6-b718-21be8f6c720b}</ProjectGuid>
     </PropertyGroup>
 </Project>
