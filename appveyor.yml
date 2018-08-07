@@ -4,16 +4,16 @@ branches:
   only:
   - master
 init:
-  - cmd: .\appveyor\init-script.cmd
+  - cmd: appveyor/init-script.cmd
 install:
 before_build:
   - cmd: dotnet --version
 build_script:
-  - cmd: .\appveyor\build-script.cmd
+  - cmd: appveyor/build-script.cmd
 after_build:
 clone_depth: 1
 test_script:
-  - cmd: .\appveyor\test-script.cmd
+  - cmd: appveyor/test-script.cmd
 on_finish :
 deploy: off
 
