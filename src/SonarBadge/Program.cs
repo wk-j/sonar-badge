@@ -2,14 +2,10 @@
 using System.Linq;
 
 namespace SonarBadge {
-    class Program {
+    static class Program {
         static void Main(string[] args) {
             var host = args[0];
             var project = args[1];
-
-            // http://localhost:9000/api/project_badges/measure?project=easy-validator&metric=alert_status
-            // http://localhost:9000/dashboard?id=easy-capture
-
             var metrics = new[] {
                 "alert_status",
                 "reliability_rating",
