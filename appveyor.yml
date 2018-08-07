@@ -1,0 +1,25 @@
+version: '1.0.{build}'
+image: Visual Studio 2017
+branches:
+  only:
+  - master
+init:
+  - cmd: appveyor\init-script.cmd
+install:
+before_build:
+  - cmd: dotnet --version
+build_script:
+  - cmd: appveyor\build-script.cmd
+after_build:
+clone_depth: 1
+test_script:
+  - cmd: appveyor\test-script.cmd
+on_finish :
+deploy: off
+
+environment:
+  mainProject: src/SonarBadge/SonarBadge.csproj
+  testProject: tests/SonarBadge.Tests/SonarBadge.Tests.csproj
+  reportPath:  coverage.opencover.xml
+  token:
+    secure: ox2bdFIAT1AU1fgbkpTwPIeO+qRjvjp9mG6RTM3jlLkIxKmkI4FsPZQhBGdbm8ne
